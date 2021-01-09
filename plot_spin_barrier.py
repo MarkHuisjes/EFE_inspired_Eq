@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # print(names[np.where(diameters == np.amax(diameters))])
 
     # Create plot dataset
-    plt.figure(dpi=800)
+    plt.figure(dpi=1000)
     # plt.tight_layout()
     plt.scatter(g_surfs, g_hosts+g_angulars, s=5, c='black')
     cm = plt.cm.get_cmap('hsv')
@@ -86,4 +86,4 @@ if __name__ == "__main__":
               + 'using JPL HORIZONS & MPC LCDB')
     plt.legend([spin_barrier[0]], ['Newtonian cohesionless spin barrier'])
     # plt.show()
-    plt.savefig('Spin barrier.png')
+    plt.savefig('Spin barrier.png', bbox_inches='tight')
