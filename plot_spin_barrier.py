@@ -57,7 +57,7 @@ if __name__ == "__main__":
     G = 6.674*10.0**(-11.0)
     g_surfs = G*rhos*(4/3)*3.14159*0.5*diameters
     g_angulars = (4*(3.14159**2)*0.5*diameters)/(periods**2)
-    extint_ratio = np.log(g_hosts/g_surfs)
+    extint_ratio = np.log10(g_hosts/g_surfs)
     # print(names[np.where(diameters == np.amax(diameters))])
 
     # Create plot dataset
